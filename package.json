@@ -3,6 +3,7 @@
 	"displayName": "VsCodeDemo",
 	"description": "just a demo",
 	"version": "0.0.1",
+	"publisher": "naso",
 	"engines": {
 		"vscode": "^1.67.0"
 	},
@@ -10,7 +11,8 @@
 		"Other"
 	],
 	"activationEvents": [
-        "onCommand:vscodedemo.helloWorld"
+        "onCommand:vscodedemo.helloWorld",
+        "onCommand:vscodedemo.showGraph"
 	],
 	"main": "./dist/extension.js",
 	"contributes": {
@@ -18,6 +20,10 @@
 			{
 				"command": "vscodedemo.helloWorld",
 				"title": "Hello World"
+			},
+			{
+				"command": "vscodedemo.showGraph",
+				"title": "show graph"
 			}
 		]
 	},
